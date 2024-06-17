@@ -18,12 +18,9 @@ setup(
             'log_parser_package=log_parser.log_structurer:main',
         ],
     },
-    author='Šárka Jadviščoková',
-    author_email='sarka.jadviscokova@gmail.com',
     description='Package for parsing certain text log files',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/vasuzivatel/my_log_package',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
