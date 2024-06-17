@@ -1,0 +1,16 @@
+{
+    "state": [
+        "state",
+        "start",
+        "error",
+        "abort",
+        "new",
+        "status",
+        "success",
+        "temperature",
+        "temphigh",
+        "fan",
+        "panic"
+    ]
+}
+

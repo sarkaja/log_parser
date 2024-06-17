@@ -1,0 +1,17 @@
+{
+    "level": [
+        "info",
+        "d",
+        "combo",
+        "w",
+        "v",
+        "warning",
+        "e",
+        "warn",
+        "error",
+        "fatal",
+        "severe",
+        "i",
+        "notice"      
+    ]
+}
