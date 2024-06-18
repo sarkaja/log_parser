@@ -60,11 +60,11 @@ def log_parser(log_file_path):
         structured_training_df['Original_Index'] = [idx for idx, _ in training_messages]
         processed_remaining_df['Original_Index'] = [idx for idx, _ in remaining_messages]
         df_combined = pd.concat([structured_training_df, processed_remaining_df])
+        df_combined = df_combined.sort_values('Original_Index').reset_index(drop=True)
+        df_combined = df_combined.drop(columns=['Original_Index'])
     else:
         df_combined = structured_training_df.copy()
 
-    df_combined = df_combined.sort_values('Original_Index').reset_index(drop=True)
-    df_combined = df_combined.drop(columns=['Original_Index'])
     df_combined = remove_columns_with_special_characters(df_combined)
     df_cleaned = df_combined.map(remove_trailing_characters)
     return df_cleaned
